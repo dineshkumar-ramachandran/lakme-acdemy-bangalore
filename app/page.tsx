@@ -147,7 +147,7 @@ export default function LakmeAcademyBangalore() {
 
       if (response.ok) {
         alert(
-          "Thank you! Your enquiry has been submitted successfully. We will contact you soon."
+          "Thank you!! Your enquiry has been submitted successfully. We will contact you soon."
         );
         setFormData({
           name: "",
