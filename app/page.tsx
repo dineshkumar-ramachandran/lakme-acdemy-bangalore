@@ -130,21 +130,18 @@ export default function LakmeAcademyBangalore() {
       enquirySection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Here you would typically send the form data to your backend
-    // which would then send an email to lakme@kaki.co.in
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           ...formData,
-          to: "onprimehub@gmail.com",
+          to: "imrankhan.basha@gmail.com", // This is fine, though it's ignored in your backend
         }),
       });
 
